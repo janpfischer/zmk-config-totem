@@ -20,4 +20,4 @@ include:
     artifact-name: totem-dongle
   - board: seeeduino_xiao_ble
     shield: settings_reset
-    artifact-name: settings-reset
+    artifact-name: totem-settings-reset
