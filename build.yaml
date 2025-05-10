@@ -2,11 +2,22 @@ include:
   - board: seeeduino_xiao_ble
     shield: totem_left
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: totem-left-dongle
   - board: seeeduino_xiao_ble
     shield: totem_right
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+    artifact-name: totem-right-dongle
+  - board: seeeduino_xiao_ble
+    shield: totem_left
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: totem-left-ble
+  - board: seeeduino_xiao_ble
+    shield: totem_right
+    artifact-name: totem-right-ble
   - board: seeeduino_xiao_ble
     shield: totem_dongle prospector_adapter
+    artifact-name: totem-dongle
   - board: seeeduino_xiao_ble
     shield: settings_reset
+    artifact-name: settings-reset
 # there is no settingsreset (needed) for the XIAO
