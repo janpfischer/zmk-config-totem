@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE  &kp UNDER  &kp UP    &kp EQUAL  &kp LBRC               &kp RBRC  &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DE_LEFT_BRACKET    &kp RBKT  &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR               &kp RPAR  &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp EQUAL
-                              &trans    &trans     &trans                 &kp DOT   &kp KP_COMMA  &kp KP_NUMBER_0
+        &kp GRAVE  &kp UNDER  &kp UP    &kp EQUAL  &kp DE_LEFT_BRACKET        &kp RBRC  &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp DE_LEFT_BRACE          &kp RBKT  &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp DE_LEFT_PARENTHESIS    &kp RPAR  &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp EQUAL
+                              &trans    &trans     &trans                     &kp DOT   &kp KP_COMMA  &kp KP_NUMBER_0
             >;
         };
 
