@@ -159,7 +159,7 @@
 
             bindings = <
         &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH  &kp DE_DOLLAR  &kp DE_PERCENT          &kp DE_CARET  &kp DE_AMPERSAND  &kp DE_STAR  &kp DE_APOSTROPHE  &kp DE_DOUBLE_QUOTES
-        &kp RA(A)           &kt DE_QUESTION  &kp RA(S)    &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN   &kp RA(N5)   &kp RA(N4)         &kp RA(O)
+        &kp RA(A)           &kp DE_QUESTION  &kp RA(S)    &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN   &kp RA(N5)   &kp RA(N4)         &kp RA(O)
 &trans  &kp RA(F18)         &kp RA(F19)      &trans       &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV   &kp C_NEXT         &kp DE_BACKSLASH      &trans
                                              &trans       &gif           &mo 3                   &trans        &kp C_PP          &trans
             >;
