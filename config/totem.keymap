@@ -10,11 +10,11 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
+#include "keys_de.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/outputs.h>
-#include "keys_de.h"
 
 #define BASE 0
 #define NAV  1
@@ -106,10 +106,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-               &kp Q  &kp W  &kp E                       &kp R      &kp T        &kp Z           &kp U      &kp I                &kp O         &kp P
-               &kp A  &kp S  &kp D                       &kp F      &kp G        &kp H           &kp J      &kp K                &mt L LA(AT)  &kp SEMICOLON
-&mt CARET ESC  &kp Y  &kp X  &kp C                       &kp V      &kp B        &kp N           &kp M      &kp COMMA            &kp DOT       &kp FSLH       &kp SQT
-                             &mt LEFT_COMMAND BACKSPACE  &lt 1 TAB  &kp SPACE    &sk LEFT_SHIFT  &lt 2 TAB  &mt LEFT_ALT DELETE
+                      &kp Q  &kp W  &kp E                       &kp R      &kp T        &kp Z           &kp U      &kp I                &kp O       &kp P
+                      &kp A  &kp S  &kp D                       &kp F      &kp G        &kp H           &kp J      &kp K                &kt L       &kp DE_SEMICOLON
+&mt LEFT_CONTROL ESC  &kp Y  &kp X  &kp C                       &kp V      &kp B        &kp N           &kp M      &kp DE_COMMA         &kp DE_DOT  &kp DE_SLASH      &kp DE_DOUBLE_QUOTES
+                                    &mt LEFT_COMMAND BACKSPACE  &lt 1 TAB  &kp SPACE    &sk LEFT_SHIFT  &lt 2 TAB  &mt LEFT_ALT DELETE
             >;
         };
 
@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp GRAVE  &kp UNDER  &kp UP    &kp EQUAL  &kp LBRC    &kp RBRC  &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT  &kp LEFT   &kp DOWN  &kp RIGHT  &kp LBKT    &kp RBKT  &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL    &kp PG_UP  &kp CAPS  &kp PG_DN  &kp LPAR    &kp RPAR  &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp EQUAL
-                              &trans    &trans     &trans      &kp DOT   &kp KP_COMMA  &kp KP_NUMBER_0
+        &kp DE_GRAVE  &kp UNDER  &kp UP    &kp EQUAL  &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT     &kp LEFT   &kp DOWN  &kp RIGHT  &kp DE_LEFT_BRACKET        &kp DE_RIGHT_BRACKET      &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
+&trans  &kp DEL       &kp PG_UP  &kp CAPS  &kp PG_DN  &kp DE_LEFT_PARENTHESIS    &kp DE_RIGHT_PARENTHESIS  &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp DE_EQUAL
+                                 &trans    &trans     &trans                     &kp DE_DOT                &kp KP_COMMA  &kp KP_NUMBER_0
             >;
         };
 
@@ -158,10 +158,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp EXCL     &kp AT       &kp HASH   &kp DLLR       &kp PRCNT               &kp CARET     &kp AMPS         &kp ASTERISK  &kp SQT     &kp DQT
-        &kp RA(A)    &trans       &kp RA(S)  &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN  &kp RA(N5)    &kp RA(N4)  &kp RA(O)
-&trans  &kp RA(F18)  &kp RA(F19)  &trans     &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV    &kp C_NEXT  &kp BSLH   &trans
-                                  &trans     &gif           &mo 3                   &trans        &kp C_PP         &trans
+        &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH  &kp DE_DOLLAR  &kp DE_PERCENT          &kp DE_CARET  &kp DE_AMPERSAND  &kp DE_STAR  &kp DE_APOSTROPHE  &kp DE_DOUBLE_QUOTES
+        &kp RA(A)           &kt DE_QUESTION  &kp RA(S)    &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN   &kp RA(N5)   &kp RA(N4)         &kp RA(O)
+&trans  &kp RA(F18)         &kp RA(F19)      &trans       &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP      &kp C_PREV   &kp C_NEXT         &kp DE_BACKSLASH      &trans
+                                             &trans       &gif           &mo 3                   &trans        &kp C_PP          &trans
             >;
         };
 
