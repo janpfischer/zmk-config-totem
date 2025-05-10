@@ -21,4 +21,3 @@ include:
   - board: seeeduino_xiao_ble
     shield: settings_reset
     artifact-name: settings-reset
-# there is no settingsreset (needed) for the XIAO
