@@ -17,6 +17,7 @@ include:
     artifact-name: totem-ble-right
   - board: seeeduino_xiao_ble
     shield: totem_dongle prospector_adapter
+    snippet: zmk-usb-logging
     artifact-name: totem-dongle
   - board: seeeduino_xiao_ble
     shield: settings_reset
