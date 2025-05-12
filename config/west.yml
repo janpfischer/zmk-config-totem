@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: prospector-zmk-module # <--- and these
       remote: janpfischer # <---
-      revision: central_refactor # <---
+      revision: output_status # <---
   self:
     path: config
