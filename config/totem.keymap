@@ -108,7 +108,7 @@
 
             bindings = <
                       &kp DE_Q  &kp DE_W  &kp DE_E                    &kp DE_R   &kp DE_T     &kp DE_Z        &kp DE_U   &kp DE_I             &kp DE_O    &kp DE_P
-                      &kp DE_A  &kp DE_S  &kp DE_D                    &kp DE_F   &kp DE_G     &kp DE_H        &kp DE_J   &kp DE_K             &kp DE_L    &kp DE_SEMICOLON
+                      &kp DE_A  &kp DE_S  &kp DE_D                    &kp DE_F   &kp DE_G     &kp DE_H        &kp DE_J   &kp DE_K             &kp DO_L    &kp DE_SEMICOLON
 &mt LEFT_CONTROL ESC  &kp DE_Y  &kp DE_X  &kp DE_C                    &kp DE_V   &kp DE_B     &kp DE_N        &kp DE_M   &kp DE_COMMA         &kp DE_DOT  &kp DE_SLASH      &kp DE_DOUBLE_QUOTES
                                           &mt LEFT_COMMAND BACKSPACE  &lt 1 TAB  &kp SPACE    &sk LEFT_SHIFT  &lt 2 TAB  &mt LEFT_ALT DELETE
             >;
