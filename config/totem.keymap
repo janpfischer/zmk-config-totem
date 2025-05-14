@@ -106,10 +106,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp DE_Q  &kp DE_W  &kp DE_E                    &kp DE_R              &kp DE_T     &kp DE_Z   &kp DE_U   &kp DE_I              &kp DE_O    &kp DE_P
-                      &kp DE_A  &kp DE_S  &kp DE_D                    &kp DE_F              &kp DE_G     &kp DE_H   &kp DE_J   &kp DE_K              &kp DE_L    &kp DE_SEMICOLON
-&mt LEFT_CONTROL ESC  &kp DE_Y  &kp DE_X  &kp DE_C                    &kp DE_V              &kp DE_B     &kp DE_N   &kp DE_M   &kp DE_COMMA          &kp DE_DOT  &kp DE_SLASH      &kp DE_DOUBLE_QUOTES
-                                          &mt LEFT_COMMAND BACKSPACE  &mt LEFT_SHIFT SPACE  &lt 1 TAB    &lt 2 TAB  &kp SPACE  &mt RIGHT_ALT DELETE
+                  &kp DE_Q  &kp DE_W  &kp DE_E                    &kp DE_R              &kp DE_T     &kp DE_Z   &kp DE_U   &kp DE_I              &kp DE_O    &kp DE_P
+                  &kp DE_A  &kp DE_S  &kp DE_D                    &kp DE_F              &kp DE_G     &kp DE_H   &kp DE_J   &kp DE_K              &kp DE_L    &kp DE_SEMICOLON
+&kp LEFT_CONTROL  &kp DE_Y  &kp DE_X  &kp DE_C                    &kp DE_V              &kp DE_B     &kp DE_N   &kp DE_M   &kp DE_COMMA          &kp DE_DOT  &kp DE_SLASH      &kp DE_DOUBLE_QUOTES
+                                      &mt LEFT_COMMAND BACKSPACE  &mt LEFT_SHIFT SPACE  &lt 1 TAB    &lt 2 TAB  &kp SPACE  &mt RIGHT_ALT DELETE
             >;
         };
 
@@ -132,10 +132,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp DE_GRAVE  &kp UNDER  &kp UP    &kp EQUAL  &kp DE_LEFT_BRACE          &kp DE_RIGHT_BRACE        &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
-        &kp LSHFT     &kp LEFT   &kp DOWN  &kp RIGHT  &kp DE_LEFT_BRACKET        &kp DE_RIGHT_BRACKET      &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
-&trans  &kp DEL       &kp PG_UP  &kp CAPS  &kp PG_DN  &kp DE_LEFT_PARENTHESIS    &kp DE_RIGHT_PARENTHESIS  &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp DE_EQUAL
-                                 &trans    &trans     &trans                     &kp DE_DOT                &kp KP_COMMA  &kp KP_NUMBER_0
+        &kp DE_GRAVE      &kp UNDER  &kp A     &kp EQUAL  &kp DE_LEFT_BRACE    &kp DE_RIGHT_BRACE  &kp KP_N7     &kp KP_N8        &kp KP_N9  &kp KP_PLUS
+        &kp LSHFT         &kp LEFT   &kp UP    &kp RIGHT  &kp DE_LPAR          &kp DE_RPAR         &kp KP_N4     &kp KP_N5        &kp KP_N6  &kp KP_MINUS
+&trans  &kp LA(LEFT_GUI)  &kp PG_UP  &kp DOWN  &kp PG_DN  &kp DE_LBKT          &kp DE_RBKT         &kp KP_N1     &kp KP_N2        &kp KP_N3  &kp KP_MULTIPLY  &kp DE_EQUAL
+                                     &trans    &trans     &trans               &kp DE_DOT          &kp KP_COMMA  &kp KP_NUMBER_0
             >;
         };
 
@@ -161,7 +161,7 @@
         &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH       &kp DE_DOLLAR  &kp DE_PERCENT          &kp DE_CARET  &kp DE_U_UMLAUT  &kp DE_STAR  &kp DE_O_UMLAUT  &kp DE_DOUBLE_QUOTES
         &kp DE_A_UMLAUT     &kp DE_QUESTION  &kp DE_AMPERSAND  &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN  &kp RA(N5)   &none            &kp DE_APOSTROPHE
 &trans  &kp RA(F18)         &kp RA(F19)      &trans            &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV   &kp C_NEXT       &kp DE_BACKSLASH      &trans
-                                             &trans            &mo 3          &trans                  &trans        &kp C_PP         &trans
+                                             &kp DEL           &mo 3          &trans                  &trans        &kp C_PP         &trans
             >;
         };
 
@@ -240,6 +240,15 @@
         &trans       &kp LS(LEFT)  &kp LC(F17)   &kp LS(RIGHT)  &kp RET        &trans  &kp F4  &kp F5  &kp F6  &kp F11
 &trans  &kp J        &kp LS(C)     &kp LC(F16)   &kp LS(V)      &kp LC(F15)    &trans  &kp F1  &kp F2  &kp F3  &kp F10  &trans
                                    &trans        &kp LC(F12)    &kp LC(F11)    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
