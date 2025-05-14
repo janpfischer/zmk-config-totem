@@ -158,9 +158,9 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH       &kp DE_DOLLAR  &kp DE_PERCENT          &kp DE_CARET  &kp DE_U_UMLAUT  &kp DE_STAR  &kp DE_O_UMLAUT  &kp DE_DOUBLE_QUOTES
-        &kp DE_A_UMLAUT     &kp DE_QUESTION  &kp DE_AMPERSAND  &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN  &kp RA(N5)   &none            &kp DE_APOSTROPHE
-&trans  &kp RA(F18)         &kp RA(F19)      &trans            &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV   &kp C_NEXT       &kp DE_BACKSLASH      &trans
+        &kp DE_EXCLAMATION  &kp DE_AT        &kp DE_HASH       &kp DE_DOLLAR  &kp DE_PERCENT          &kp DE_CARET  &kp DE_U_UMLAUT  &kp DE_STAR           &kp DE_O_UMLAUT       &kp DE_DOUBLE_QUOTES
+        &kp DE_A_UMLAUT     &kp DE_QUESTION  &kp DE_AMPERSAND  &trans         &trans                  &kp C_MUTE    &kp PRINTSCREEN  &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC  &kp DE_APOSTROPHE
+&trans  &kp RA(F18)         &kp RA(F19)      &trans            &kp C_BRI_DEC  &kp C_BRIGHTNESS_INC    &kp C_VOL_DN  &kp C_VOL_UP     &kp C_PREV            &kp C_NEXT            &kp DE_BACKSLASH      &trans
                                              &kp DEL           &mo 3          &trans                  &trans        &kp C_PP         &trans
             >;
         };
