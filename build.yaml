@@ -16,6 +16,13 @@ include:
     shield: totem_right
     artifact-name: totem-ble-right
   - board: seeeduino_xiao_ble
+    shield: totem_dongle_prospector prospector_adapter
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+    snippet: zmk-usb-logging
+    artifact-name: totem-dongle-prospector
+  - board: seeeduino_xiao_ble
+    shield: totem_dongle
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     shield: totem_dongle prospector_adapter
     snippet: zmk-usb-logging
     artifact-name: totem-dongle
