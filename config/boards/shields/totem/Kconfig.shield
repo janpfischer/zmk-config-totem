@@ -9,4 +9,8 @@ config SHIELD_TOTEM_RIGHT
 
 # No whitespace after the comma or in the keyboard name!
 config SHIELD_TOTEM_DONGLE
+    def_bool $(shields_list_contains,totem_dongle_prospector)
+
+# No whitespace after the comma or in the keyboard name!
+config SHIELD_TOTEM_DONGLE
     def_bool $(shields_list_contains,totem_dongle)
