@@ -12,5 +12,8 @@ manifest:
     - name: prospector-zmk-module # <--- and these
       remote: janpfischer # <---
       revision: output_status # <---
+    - name: jpf_display # <--- and these
+      remote: janpfischer # <---
+      revision: main # <---
   self:
     path: config
