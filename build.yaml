@@ -20,11 +20,11 @@ include:
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
     snippet: zmk-usb-logging
     artifact-name: totem-dongle-prospector
-  - board: seeeduino_xiao_ble
-    shield: totem_dongle_prospector jpf_display
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
-    snippet: zmk-usb-logging
-    artifact-name: totem-dongle-jpf
+  #- board: seeeduino_xiao_ble
+  #  shield: totem_dongle_prospector jpf_display
+  #  cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
+  #  snippet: zmk-usb-logging
+  #  artifact-name: totem-dongle-jpf
   - board: seeeduino_xiao_ble
     shield: totem_dongle
     cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
