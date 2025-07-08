@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: v0.2.1
+      revision: 147c340c6e8d377304acfdd64dc86cf83ebdfef2
       import: app/west.yml
     - name: zmk-dongle-screen
       remote: janpfischer
