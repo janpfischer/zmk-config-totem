@@ -6,6 +6,8 @@ url: https://github.com/GEIGEIGEIST/TOTEM
 requires: [seeeduino_xiao_ble]
 features:
   - keys
+  - studio
 siblings:
   - totem_left
   - totem_right
+  - totem_dongle

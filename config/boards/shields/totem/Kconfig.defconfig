@@ -44,3 +44,7 @@ config BT_MAX_PAIRED
     default 6
 
 endif
+
+# ZMK Studio Support
+CONFIG_ZMK_STUDIO=y
+CONFIG_ZMK_SETTINGS_SHELL=y

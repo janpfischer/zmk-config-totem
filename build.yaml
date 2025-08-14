@@ -17,8 +17,8 @@ include:
     artifact-name: totem-ble-right
   - board: seeeduino_xiao_ble
     shield: totem_dongle dongle_screen
-    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000
-    snippet: zmk-usb-logging
+    cmake-args: -DCONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS=8000 -DCONFIG_ZMK_STUDIO=y
+    snippet: zmk-usb-logging studio-rpc-usb-uart
     artifact-name: totem-dongle-yads
   - board: seeeduino_xiao_ble
     shield: totem_dongle
