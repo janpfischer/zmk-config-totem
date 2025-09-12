@@ -11,6 +11,6 @@ manifest:
       import: app/west.yml
     - name: zmk-dongle-screen
       remote: janpfischer
-      revision: main
+      revision: 0.1.2
   self:
     path: config
